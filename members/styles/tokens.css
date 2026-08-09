@@ -1,0 +1,72 @@
+:root {
+  /*Baseline variables colors. Fallback for old browsers that don't support data-theme or prefers-color-theme*/
+  --color-primary: #faeead;
+  --color-accent: #ff2ded;
+  --color-text: #30241d;
+  --color-link: #318aa0;
+  --color-link-visited: #a05dd6;
+
+  color-scheme: light dark;
+
+  /*spaces*/
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+
+  /*fonts*/
+  --font-text: 1rem;
+  --font-link: 2rem;
+
+  /*border*/
+  --border-style: solid;
+  --border-width: 1px;
+  --border: var(--border-width) var(--border-style) var(--color-accent);
+}
+
+/*Light mode*/
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-primary: #faeead;
+    --color-accent: #ff2ded;
+    --color-text: #30241d;
+    --color-link: #318aa0;
+    --color-link-visited: #a05dd6;
+  }
+}
+
+:root[data-theme="light"] {
+  --color-primary: #faeead;
+  --color-accent: #ff2ded;
+  --color-text: #30241d;
+  --color-link: #318aa0;
+  --color-link-visited: #a05dd6;
+}
+
+/*Dark mode*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #1a0f1b;
+    --color-accent: #ff2ded;
+    --color-text: #ffffff;
+    --color-link: #c3f2ff;
+    --color-link-visited: #e6c8ff;
+  }
+}
+:root[data-theme="dark"] {
+  --color-primary: #1a0f1b;
+  --color-accent: #ff2ded;
+  --color-text: #ffffff;
+  --color-link: #c3f2ff;
+  --color-link-visited: #e6c8ff;
+}
+
+/*Theme picker is hidden by default*/
+.theme-picker {
+  display: none;
+}
+
+/*Show when js enable*/
+.js-enabled .theme-picker {
+  display: block;
+}

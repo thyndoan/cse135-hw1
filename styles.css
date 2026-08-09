@@ -1,0 +1,81 @@
+:root {
+  --color-background: #fffeef;
+  --color-secondary: #1f3675;
+  --color-text: #271d1d;
+  --color-accent: #389471;
+  --color-link: #2898b9;
+  --color-visted-link: #8356ca;
+  --max-width: 800px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+header {
+  padding: 3rem 1rem 1rem;
+}
+
+h1 {
+  color: var(--color-secondary);
+  font-size: 3rem;
+  letter-spacing: 0.05em;
+}
+
+header p {
+  color: var(--color-accent);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+main {
+  flex: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+main a {
+  color: var(--color-link);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+main a:visited {
+  color: var(--color-visted-link);
+}
+
+main a:hover {
+  border-color: var(--color-accent);
+}
+
+h2 {
+  color: var(--color-text);
+  margin-top: 2.5rem;
+  font-size: 1.3rem;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+footer {
+  padding: 2rem 1rem;
+  color: var(--color-text);
+  font-size: 0.85rem;
+}
