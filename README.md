@@ -20,6 +20,11 @@ The site deploys using a bare Git repository and a `post-receive` hook on the se
 
 - Please see [Github-Deploy](Github-Deploy.gif) for a demo of deploying a file change.
 
-**How to login as grader**
-username: grader
-password: cse135
+## How to login as grader
+
+- username: grader
+- password: cse135
+
+## Compression
+
+After I enabled `mod_deflate`, I checked in Chrome DevTool, and I saw that response headers now include the `Content-Encoding: gzip`. Page transfer size dropped from 1.2kB (uncompressed) to 756B (compressed) for my homepage.
