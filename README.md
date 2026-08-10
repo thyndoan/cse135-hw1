@@ -19,3 +19,7 @@ The site deploys using a bare Git repository and a `post-receive` hook on the se
 **Demo**
 
 - Please see [Github-Deploy](Github-Deploy.gif) for a demo of deploying a file change.
+
+**How to login as grader**
+username: grader
+password: cse135
