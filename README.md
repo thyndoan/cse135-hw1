@@ -1,6 +1,7 @@
 # cse135 -Thy Doan - hw1
 
 - [My Website](https://thydoan.space/)
+- [My github repo](https://github.com/thyndoan/cse135-hw1)
 
 ## Part 2
 
@@ -49,3 +50,22 @@ I changed the server response header to
 4. Set `ServerTokens Full` in `/etc/apache2/apache2.conf` (to show the customized response header)
 5. Add `SecServerSignature "CSE135 Server"` to `/etc/modsecurity/modsecurity.conf`
 6. Restart Apache: `sudo systemctl restart apache2`
+
+## Extra Credit — Matomo Analytics
+
+- I installed Matomo at thydoan.space/analytics/
+
+## How I set up
+
+1. Installed required PHP extensions (`php-xml`, `php-mbstring`, `php-gd`, `php-curl`, `php-zip`)
+2. Downloaded and extracted Matomo into `public_html/analytics/`
+3. Created a mySQL database (`matomo`) and user for it
+4. Set folder ownership to `www-data:www-data`
+5. Finished Matomo's install wizard: connected it to the MySQL
+   database, created a superuser account, and set up initial site
+   tracking
+
+**Access:**
+
+- Protected by the site's Basic Auth
+- Link: [https://name.space/analytics/](https://thydoan.space/analytics/)
