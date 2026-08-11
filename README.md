@@ -58,7 +58,7 @@ I changed the server response header to
 ## How I set up
 
 1. Installed required PHP extensions (`php-xml`, `php-mbstring`, `php-gd`, `php-curl`, `php-zip`)
-2. Downloaded and extracted Matomo into `public_html/analytics/`
+2. Downloaded and extracted Matomo into `/var/www/thydoan.space/public_html/analytics/`
 3. Created a mySQL database (`matomo`) and user for it
 4. Set folder ownership to `www-data:www-data`
 5. Finished Matomo's install wizard: connected it to the MySQL
@@ -68,4 +68,4 @@ I changed the server response header to
 **Access:**
 
 - Protected by the site's Basic Auth
-- Link: [https://name.space/analytics/](https://thydoan.space/analytics/)
+- Link: [https://thydoan.space/analytics/](https://thydoan.space/analytics/)
