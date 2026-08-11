@@ -1,5 +1,7 @@
 # cse135 -Thy Doan - hw1
 
+- [My Website](https://thydoan.space/)
+
 ## Part 2
 
 ### GitHub Deployment
